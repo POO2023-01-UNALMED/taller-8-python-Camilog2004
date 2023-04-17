@@ -12,8 +12,8 @@ class Futbolista(Persona,Deportista):
 		Futbolista._listaFutbolistas.append(self)
 
 	#Se hace el casteo a string de aquellos atributos numericos
-	def __str__(self):
-        return "Mi nombre es " + self.getNombre() + " soy profesional en el deporte " + self.getDeporte() + " Tengo " + str(self.getEdad()) + " años de edad y llevo " + str(self.getAñosPracticando()) + " años en el deporte"
+    def __str__(self):
+    	return "Mi nombre es " + self.getNombre() + " soy profesional en el deporte " + self.getDeporte() + " Tengo " + str(self.getEdad()) + " años de edad y llevo " + str(self.getAñosPracticando()) + " años en el deporte"
 
     @classmethod
     def setListaFutbolistas(cls,listaFutbolistas):
