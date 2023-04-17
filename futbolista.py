@@ -4,12 +4,12 @@ from persona import Persona
 class Futbolista(Persona,Deportista):
     _listaFutbolistas=[]
     def __init__(self,nombre,edad,altura,sexo,añosPracticando,golesMarcados,tarjetasRojas,piernaHabil):
-		Persona.__init__(self,nombre,edad,altura,sexo)
-		Deportista.__init__(self,"Futbol",añosPracticando)
-		self._golesMarcados=golesMarcados
-		self._tarjetasRojas=tarjetasRojas
-		self._piernaHabil=piernaHabil
-		Futbolista._listaFutbolistas.append(self)
+	Persona.__init__(self,nombre,edad,altura,sexo)
+	Deportista.__init__(self,"Futbol",añosPracticando)
+	self._golesMarcados=golesMarcados
+	self._tarjetasRojas=tarjetasRojas
+	self._piernaHabil=piernaHabil
+	Futbolista._listaFutbolistas.append(self)
 
     def __str__(self):
         return "Mi nombre es " + self.getNombre() + " soy profesional en el deporte " + self.getDeporte() + " Tengo " + str(self.getEdad()) + " años de edad y llevo " + str(self.getAñosPracticando()) + " años en el deporte"
